@@ -369,6 +369,10 @@ class Chord(Group):
         c.separed_chords = self.separed_chords.copy()
         return c
 
+    def mask(self):
+        # TODO
+        pass
+
     def __str__(self):
         return f"Chord({self.notes})"
 
