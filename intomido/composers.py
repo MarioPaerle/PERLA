@@ -511,7 +511,7 @@ class Pianoroll:
 
             return new_roll.astype(int)
 
-        return multi_hot_to_midi(apply_velocity_curve(self.grid.T), time_per_step=.5/self.subdivision)
+        return multi_hot_to_midi(apply_velocity_curve(self.grid.T), time_per_step=1/self.subdivision)
 
     def _add_note(self, note: Note):
         self.added_notes.append(note)
