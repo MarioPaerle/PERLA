@@ -125,7 +125,7 @@ def chopiner():
             barcount += 1
 
         if word == 'Note':
-            if how == 'free':
+            if how == 'free' or lastm_mel is None:
                 thispattern = ['-'] * RESOLUTION
                 thispattern[0] = rd.choice(chords[i].copy().notes_values()) + 12
                 last_pattern = thispattern
