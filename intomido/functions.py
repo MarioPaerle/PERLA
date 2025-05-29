@@ -1,12 +1,14 @@
-import pretty_midi
 import numpy as np
 import matplotlib.pyplot as plt
 import pypianoroll
 from numpy.lib.stride_tricks import sliding_window_view
-from scipy.io.wavfile import write
-from IPython.display import Audio
-
-
+import pretty_midi
+import numpy as np
+try:
+    import sounddevice as sd
+except ImportError as e:
+    print(f'Probably using Streamlit? :  {e}')
+import os
 
 def midi_to_numpy(midi_path: str, fs: int = 100) -> np.ndarray:
     """
@@ -54,12 +56,8 @@ def midi_to_audio(midi_path, fs=44100, tempo=100, autoplay=False):
     wav = wav / np.max(np.abs(wav))
     return Audio(wav, rate=fs, autoplay=True)
 
-import pretty_midi
-import numpy as np
-import sounddevice as sd
-import os
 
-def play_midi_audio(midi_input, fs=44100, play=True):
+def play_midi_audio(midi_input, fs=44100, play=False):
     try:
         if isinstance(midi_input, str) and os.path.exists(midi_input):
             midi_data = pretty_midi.PrettyMIDI(midi_input)
