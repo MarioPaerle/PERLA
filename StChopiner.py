@@ -124,7 +124,7 @@ def chopiner():
         if word == '|':
             barcount += 1
 
-        elif word == 'Note':
+        if word == 'Note':
             if how == 'free':
                 thispattern = ['-'] * RESOLUTION
                 thispattern[0] = rd.choice(chords[i].copy().notes_values()) + 12
