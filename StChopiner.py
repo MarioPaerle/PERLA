@@ -162,7 +162,7 @@ def chopiner():
                 roll.add_list_pattern(cast_list(thispattern, scale=cast), mlt, start=i * RESOLUTION, transpose=12)
 
             if i%2 == 0:
-                closer = thispattern[-1]
+                closer = [c for c in thispattern if isinstance(c, int)][-1]
                 thispattern = ['-'] * RESOLUTION
                 thispattern[0] = nearest(closer, [69+12, 72+12, 76+12])
                 roll.add_list_pattern(thispattern, 1, start=(i + 1) * RESOLUTION, clamp_end=(i + 2) * RESOLUTION)
