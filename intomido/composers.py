@@ -540,7 +540,7 @@ class Pianoroll:
         if returns:
             fig, ax = plt.subplots()
             ax.imshow(self.grid[::-1, :])
-            fig.show()
+            # fig.show()
             return fig
         else:
             plt.imshow(self.grid[::-1, :])
