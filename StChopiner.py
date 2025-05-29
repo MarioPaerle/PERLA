@@ -1,9 +1,10 @@
+
+import os
 os.system("sudo apt-get install libportaudio2")
 
 from intomido.composers import  *
 import random as rd
 import streamlit as st
-import os
 
 RESOLUTION = 12
 
