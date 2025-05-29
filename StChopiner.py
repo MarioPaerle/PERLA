@@ -164,7 +164,7 @@ def chopiner():
             if i%2 == 0:
                 closer = thispattern[-1]
                 thispattern = ['-'] * RESOLUTION
-                thispattern[0] = nearest(closer, [69, 72, 76])
+                thispattern[0] = nearest(closer, [69+12, 72+12, 76+12])
                 roll.add_list_pattern(thispattern, 1, start=(i + 1) * RESOLUTION, clamp_end=(i + 2) * RESOLUTION)
 
         elif word in ('ScaleClose', 'CascadeClose'):
