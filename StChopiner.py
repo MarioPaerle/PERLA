@@ -150,8 +150,8 @@ def chopiner():
                 roll.add_list_pattern(thispattern, mlt, start=i*RESOLUTION, transpose=12)
                 last_pattern = thispattern
                 lastm_mel = thispattern
-            elif how == 'Simple Repeat':
-                thispattern = last_pattern
+            elif how == 'Simple Repeat' and i%2 == 0:
+                thispattern = lastm_mel
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(thispattern, mlt, start=i * RESOLUTION, transpose=12)
                 last_pattern = thispattern
