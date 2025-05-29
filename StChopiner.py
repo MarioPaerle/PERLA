@@ -1,9 +1,9 @@
 from intomido.composers import  *
 import random as rd
 import streamlit as st
-from intomido.composers import Chords as c
+import os
 
-
+os.system("sudo apt-get install libportaudio2")
 RESOLUTION = 12
 
 possible_progressions = {
