@@ -161,6 +161,11 @@ def chopiner():
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(cast_list(thispattern, scale=cast), mlt, start=i * RESOLUTION, transpose=12)
 
+            if i%2 == 0:
+                thispattern = ['-'] * RESOLUTION
+                thispattern[0] = 81
+                roll.add_list_pattern(thispattern, 1, start=(i + 1) * RESOLUTION, clamp_end=(i + 2) * RESOLUTION)
+
         elif word in ('ScaleClose', 'CascadeClose'):
             thispattern = rd.choice(SCALE_CLOSES['tonic'])
             mlt = RESOLUTION // 6
