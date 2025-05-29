@@ -6,7 +6,7 @@ import pretty_midi
 import numpy as np
 try:
     import sounddevice as sd
-except ImportError as e:
+except Exception as e:
     print(f'Probably using Streamlit? :  {e}')
 import os
 
