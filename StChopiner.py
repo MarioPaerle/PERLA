@@ -112,7 +112,7 @@ def chopiner():
     patterns = []
     thispattern = []
     last_pattern = []
-    lastm_mel = None
+    last_mel = None
     chords = prog.get_separed_chords()
 
 
@@ -125,7 +125,7 @@ def chopiner():
             barcount += 1
 
         if word == 'Note':
-            if how == 'free' or lastm_mel is None:
+            if how == 'free' or last_mel is None:
                 thispattern = ['-'] * RESOLUTION
                 thispattern[0] = rd.choice(chords[i].copy().notes_values()) + 12
                 last_pattern = thispattern
@@ -144,21 +144,21 @@ def chopiner():
             roll.add_list_pattern(thispattern, 1, start=(i+1)*RESOLUTION, clamp_end=(i+2)*RESOLUTION)
 
         elif word in ('Mel'):
-            if how == 'free' or lastm_mel is None:
+            if how == 'free' or last_mel is None:
                 thispattern = rd.choice(MEL_PATTERNS[typology])
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(thispattern, mlt, start=i*RESOLUTION, transpose=12)
                 last_pattern = thispattern
-                lastm_mel = thispattern
+                last_mel = thispattern
             elif how == 'Simple Repeat' and i%2 == 0:
-                thispattern = lastm_mel
+                thispattern = last_mel
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(thispattern, mlt, start=i * RESOLUTION, transpose=12)
                 last_pattern = thispattern
-                lastm_mel = thispattern
+                last_mel = thispattern
             else:
                 st.write('casted')
-                thispattern = lastm_mel
+                thispattern = last_mel
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(cast_list(thispattern, scale=cast), mlt, start=i * RESOLUTION, transpose=12)
 
