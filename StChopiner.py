@@ -12,7 +12,10 @@ possible_progressions = {
     "Am Am E Am | Dm Dmnap E Am" : (Chords.VImin.waltz() + Chords.VImin.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz() + Chords.IImin.waltz() + Chords.Napulitan.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION), # .pedal().to_chord(),
     "F Am E Am | Dm Dmnap E Am" : (Chords.IVmaj.waltz() + Chords.VImin.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz() + Chords.IImin.waltz() + Chords.Napulitan.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION), # .pedal().to_chord(),
     # "C F Fm C | G Dm E Am" : (Chords.Imaj.waltz() + Chords.IVmaj.waltz() + Chords.IVmin.waltz() + Chords.Imaj.waltz() + Chords.Vmaj.waltz() + Chords.IImin.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION), # .pedal().to_chord(),
+    # "C F Fm C | G Dm E Am" : (Chords.Imaj.waltz() + Chords.IVmaj.waltz() + Chords.IVmin.waltz() + Chords.Imaj.waltz() + Chords.Vmaj.waltz() + Chords.IImin.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION), # .pedal().to_chord(),
 }
+
+
 
 phrases = [
     "Mel Mel Close | Mel Mel ScaleClose",
@@ -70,6 +73,9 @@ if True:
         [64, 72, 62, 71, 59, 68],
         [74, '-', '-', 76, 68, 72],
         [74, '-', 76, 68, 72, 71],
+        ],
+        'third':[
+        ['-', 76, 64, 74, 68, 71],
         ]
     }
 
@@ -77,6 +83,16 @@ if True:
         'tonic': [
             [76, 69, 72, '-', '-', '-'],
             [69, 71, 72, 64, 76, '-'],
+            ['-', 76, '-', '-', '-', '-'],
+            ['-', '-', 76, '-', '-', '-'],
+            ['-', 72, '-', '-', '-', '-'],
+            ['-', '-', 72, '-', '-', '-'],
+            ['-', 76, 74, 72, 71, 69, 69],
+            ['-', 76, 74, 72, 77, 76, 76],
+        ],
+        'third': [
+            [76, 79, 77, 76, 75, 76],
+            [72, 74, 76, '-', '-', 72],
             ['-', 76, '-', '-', '-', '-'],
             ['-', '-', 76, '-', '-', '-'],
             ['-', 72, '-', '-', '-', '-'],
@@ -111,6 +127,7 @@ def chopiner():
     for i, word in enumerate(phrase.split()):
         how = melhow[i]
         cast = NoteList(list(set(chords[i].copy().notes_values())))
+        typology = rd.choice(['tonic', 'third'])
 
         if word == '|':
             barcount += 1
@@ -127,7 +144,7 @@ def chopiner():
                 roll.add_list_pattern(thispattern, 1, start=i * RESOLUTION, pedal_on=False, deltastart=1)
 
         elif word in ('Close', 'MelClose'):
-            thispattern = rd.choice(CLOSE['tonic'])
+            thispattern = rd.choice(CLOSE[typology])
             mlt = RESOLUTION // 6
             roll.add_list_pattern(thispattern, mlt, start=i*RESOLUTION, transpose=12)
             thispattern = ['-'] * RESOLUTION
@@ -136,7 +153,7 @@ def chopiner():
 
         elif word in ('Mel'):
             if how == 'free' or lastm_mel is None:
-                thispattern = rd.choice(MEL_PATTERNS['tonic'])
+                thispattern = rd.choice(MEL_PATTERNS[typology])
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(thispattern, mlt, start=i*RESOLUTION, transpose=12)
                 last_pattern = thispattern

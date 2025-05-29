@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="working on trapper">
-      <change afterPath="$PROJECT_DIR$/StringToMidi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intomido/composers.py" beforeDir="false" afterPath="$PROJECT_DIR$/intomido/composers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intomido/drums.py" beforeDir="false" afterPath="$PROJECT_DIR$/intomido/drums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StChopiner.py" beforeDir="false" afterPath="$PROJECT_DIR$/StChopiner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,9 @@
       <updated>1748262001478</updated>
       <workItem from="1748262002593" duration="4848000" />
       <workItem from="1748270799935" duration="1746000" />
-      <workItem from="1748345358395" duration="7851000" />
+      <workItem from="1748345358395" duration="8475000" />
+      <workItem from="1748419178591" duration="521000" />
+      <workItem from="1748516485085" duration="680000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
@@ -138,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748279268438</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working on trapper">
+      <option name="closed" value="true" />
+      <created>1748367747639</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748367747639</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
