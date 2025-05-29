@@ -130,10 +130,10 @@ def chopiner():
                 thispattern[0] = rd.choice(chords[i].copy().notes_values()) + 12
                 last_pattern = thispattern
                 patterns.append(thispattern)
-                roll.add_list_pattern(thispattern, 1, start=i*RESOLUTION, pedal_on=False, deltastart=1)
+                roll.add_list_pattern(thispattern, 1, start=i*RESOLUTION, pedal_on=True, deltastart=1)
             else:
                 thispattern = cast_list(last_pattern, cast.list())
-                roll.add_list_pattern(thispattern, 1, start=i * RESOLUTION, pedal_on=False, deltastart=1)
+                roll.add_list_pattern(thispattern, 1, start=i * RESOLUTION, pedal_on=True, deltastart=1)
 
         elif word in ('Close', 'MelClose'):
             thispattern = rd.choice(CLOSE[typology])
