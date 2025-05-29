@@ -161,7 +161,7 @@ def chopiner():
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(cast_list(thispattern, scale=cast), mlt, start=i * RESOLUTION, transpose=12)
 
-            if i%2 == 0:
+            if i%2 == 0 and i < len(phrase.split) - 1 and phrase.split[i+1] == 'Note':
                 closer = [c for c in thispattern if isinstance(c, int)][-1]
                 thispattern = ['-'] * RESOLUTION
                 thispattern[0] = nearest(closer, [69+12, 72+12, 76+12])
