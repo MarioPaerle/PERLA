@@ -105,7 +105,7 @@ def chopiner():
 
     roll = Pianoroll(9, RESOLUTION)
     prog = possible_progressions[progression]
-    roll._add_group(prog)
+    roll._add_group(prog, vel_mlt=0.65)
     roll.plot()
 
     barcount = 0

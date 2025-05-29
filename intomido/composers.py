@@ -511,7 +511,8 @@ class Pianoroll:
 
             return new_roll.astype(int)
 
-        return multi_hot_to_midi(apply_velocity_curve(self.grid.T), time_per_step=1/self.subdivision)
+        # return multi_hot_to_midi(apply_velocity_curve(self.grid.T), time_per_step=1/self.subdivision)
+        return multi_hot_to_midi(self.grid.T, time_per_step=1/self.subdivision)
 
     def _add_note(self, note: Note):
         self.added_notes.append(note)
@@ -520,13 +521,14 @@ class Pianoroll:
         velocity = note.velocity
         self.grid[note.note, start:end-1] = velocity
 
-    def _add_group(self, group: Group):
+    def _add_group(self, group: Group, vel_mlt=1):
         if not hasattr(group, 'notes'):
             try:
                 group = group.to_chord()
             except AttributeError:
                 pass
         for note in group.notes:
+            note.velocity = int(note.velocity *  vel_mlt)
             self._add_note(note)
 
     def add_note(self, pitch, start, end, velocity=100):
