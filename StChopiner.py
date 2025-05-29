@@ -30,8 +30,8 @@ melhows = [
     "free",
     "free",
     "free",
-    "free",
-    "free",
+    "Simple Repeat",
+    "Simple Repeat",
     "Simple Repeat",
     "Casted Repeat",
     "UpCast Repeat",
@@ -148,6 +148,12 @@ def chopiner():
                 thispattern = rd.choice(MEL_PATTERNS[typology])
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(thispattern, mlt, start=i*RESOLUTION, transpose=12)
+                last_pattern = thispattern
+                lastm_mel = thispattern
+            elif how == 'Simple Repeat':
+                thispattern = last_pattern
+                mlt = RESOLUTION // 6
+                roll.add_list_pattern(thispattern, mlt, start=i * RESOLUTION, transpose=12)
                 last_pattern = thispattern
                 lastm_mel = thispattern
             else:
