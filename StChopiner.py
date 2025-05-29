@@ -186,9 +186,15 @@ st.title("Chopiner 🎹")
 st.subheader('v0.1')
 st.write("Here's a simple Waltzer generator of just 8 bars 😒")
 
+from io import BytesIO
+def midi_to_bytes(midi_obj):
+    midi_bytes_io = BytesIO()
+    midi_obj.write(midi_bytes_io)
+    return midi_bytes_io.getvalue()
+
 if st.button("generate"):
     waltzer, midi = chopiner()
 
     st.pyplot(waltzer.plot())
     st.audio(waltzer.toaudio(), sample_rate=44_100)
-    st.download_button("Download Midi file", data=midi)
+    st.download_button("Download Midi file", data=midi_to_bytes(midi))
