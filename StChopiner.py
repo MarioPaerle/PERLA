@@ -191,3 +191,4 @@ if st.button("generate"):
 
     st.pyplot(waltzer.plot())
     st.audio(waltzer.toaudio(), sample_rate=44_100)
+    st.download_button("Download Midi file", data=midi)
