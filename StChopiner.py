@@ -99,9 +99,9 @@ def chopiner():
     phrase = rd.choice(phrases)
     melhow = rd.choices(melhows, k=8)
 
-    print(f"Selected Progression  {progression}")
-    print(f"Selected phrases  {phrase}")
-    print(f"Selected hows  {melhow}")
+    st.write(f"Selected Progression  {progression}")
+    st.write(f"Selected phrases  {phrase}")
+    st.write(f"Selected hows  {melhow}")
 
     roll = Pianoroll(9, RESOLUTION)
     prog = possible_progressions[progression]
@@ -157,7 +157,6 @@ def chopiner():
                 last_pattern = thispattern
                 last_mel = thispattern
             else:
-                st.write('casted')
                 thispattern = last_mel
                 mlt = RESOLUTION // 6
                 roll.add_list_pattern(cast_list(thispattern, scale=cast), mlt, start=i * RESOLUTION, transpose=12)
