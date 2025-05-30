@@ -1,6 +1,7 @@
 from intomido.composers import  *
 import random as rd
 import streamlit as st
+from intomido.functions import random_permute
 
 RESOLUTION = 12
 
@@ -11,18 +12,18 @@ possible_progressions = {
     "F Am E Am | Dm Dmnap E Am" : (Chords.IVmaj.waltz() + Chords.VImin.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz() + Chords.IImin.waltz() + Chords.Napulitan.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION), # .pedal().to_chord(),
     # "C F Fm C | G Dm E Am" : (Chords.Imaj.waltz() + Chords.IVmaj.waltz() + Chords.IVmin.waltz() + Chords.Imaj.waltz() + Chords.Vmaj.waltz() + Chords.IImin.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION), # .pedal().to_chord(),
     # "C F Fm C | G Dm E Am" : (Chords.Imaj.waltz() + Chords.IVmaj.waltz() + Chords.IVmin.waltz() + Chords.Imaj.waltz() + Chords.Vmaj.waltz() + Chords.IImin.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION), # .pedal().to_chord(),
+    "Ciaccon" : (Chords.VImin.waltz() + Chords.IIImaj.waltz() + Chords.Imaj.waltz() + Chords.IVmaj.waltz() + Chords.IImin.waltz() + Chords.Napulitan.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION),
+    "Canon" : (Chords.VImin.waltz() + Chords.IVmaj.waltz() + Chords.Vmaj.waltz() + Chords.Imaj.waltz() + Chords.IImin.waltz() + Chords.Napulitan.waltz() + Chords.IIImaj.waltz() + Chords.VImin.waltz()).multiply(RESOLUTION)
 }
 
 
 
 phrases = [
     "Mel Mel Close | Mel Mel ScaleClose",
-    "Mel Mel Mel | Mel Mel ScaleClose",
-    "Mel Mel Mel | Mel Mel Close",
-    "Mel Mel Mel | Mel Mel CascadeClose",
-    "Note Note ScaleClose | Note Scale CascadeClose",
-    "Note Note MelClose | Note Note Close",
-    "Note Note MelClose | Note Note Close",
+    "Mel Mel Note | Mel Mel ScaleClose",
+    "Mel Mel Note | Mel Mel Close",
+    "Mel Note Mel Note | Mel CascadeClose",
+    "Mel Note Mel Note | Mel CascadeClose",
 ]
 
 melhows = [
@@ -105,7 +106,7 @@ def chopiner():
 
     roll = Pianoroll(9, RESOLUTION)
     prog = possible_progressions[progression]
-    roll._add_group(prog, vel_mlt=0.75)
+    roll._add_group(prog, vel_mlt=0.85)
     roll.plot()
 
     barcount = 0
@@ -113,18 +114,21 @@ def chopiner():
     thispattern = []
     last_pattern = []
     last_mel = None
+    closed_note = False
     chords = prog.get_separed_chords()
 
 
     for i, word in enumerate(phrase.split()):
         how = melhow[i]
         cast = NoteList(list(set(chords[i].copy().notes_values())))
+        if i < len(phrase.split()) - 1:
+            postcast = NoteList(list(set(chords[i+1].copy().notes_values())))
         typology = rd.choice(['tonic', 'third'])
 
         if word == '|':
             barcount += 1
 
-        if word == 'Note':
+        if word == 'Note' and not closed_note:
             if how == 'free' or last_mel is None:
                 thispattern = ['-'] * RESOLUTION
                 thispattern[0] = rd.choice(chords[i].copy().notes_values()) + 12
@@ -134,6 +138,8 @@ def chopiner():
             else:
                 thispattern = cast_list(last_pattern, cast.list())
                 roll.add_list_pattern(thispattern, 1, start=i * RESOLUTION, pedal_on=True, deltastart=1)
+            if closing_note:
+                closed_note = False
 
         elif word in ('Close', 'MelClose'):
             thispattern = rd.choice(CLOSE[typology])
@@ -147,7 +153,11 @@ def chopiner():
             if how == 'free' or last_mel is None:
                 thispattern = rd.choice(MEL_PATTERNS[typology])
                 mlt = RESOLUTION // 6
-                roll.add_list_pattern(thispattern, mlt, start=i*RESOLUTION, transpose=12)
+                if rd.random() > 0.7:
+                    roll.add_list_pattern(random_permute(thispattern, rd.choice([1, 1, 1, 2, 3])), mlt, start=i*RESOLUTION, transpose=12)
+                else:
+                    roll.add_list_pattern(thispattern, mlt, start=i*RESOLUTION, transpose=12)
+
                 last_pattern = thispattern
                 last_mel = thispattern
             elif how == 'Simple Repeat' and i%2 == 0:
@@ -164,8 +174,9 @@ def chopiner():
             if i%2 == 0 and i < len(phrase.split()) - 1 and phrase.split()[i+1] == 'Note':
                 closer = [c for c in thispattern if isinstance(c, int)][-1]
                 thispattern = ['-'] * RESOLUTION
-                thispattern[0] = nearest(closer, [69+12, 72+12, 76+12])
+                thispattern[0] = nearest(closer, [n + 12 for n in postcast.notes])
                 roll.add_list_pattern(thispattern, 1, start=(i + 1) * RESOLUTION, clamp_end=(i + 2) * RESOLUTION)
+                closed_note = True
 
         elif word in ('ScaleClose', 'CascadeClose'):
             thispattern = rd.choice(SCALE_CLOSES['tonic'])

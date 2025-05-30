@@ -4,6 +4,7 @@ import pypianoroll
 from numpy.lib.stride_tricks import sliding_window_view
 import pretty_midi
 import numpy as np
+import random as rd
 try:
     import sounddevice as sd
 except Exception as e:
@@ -302,3 +303,10 @@ def mse_list(a, b):
     a = [aa.note for aa in a]
     b = [bb.note for bb in b]
     return sum([(aa - bb)**2 for aa, bb in zip(a, b)])
+
+def random_permute(mel: list, n_pemutation=1):
+    for i in range(n_pemutation):
+        i, j = rd.randint(0, len(mel)-1), rd.randint(0, len(mel)-1)
+        mel[i], mel[j] = mel[j], mel[i]
+    return mel
+

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="New Typologied in the StChopiner">
+    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Added Pattern Randomizing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StChopiner.py" beforeDir="false" afterPath="$PROJECT_DIR$/StChopiner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intomido/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/intomido/functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,10 @@
       <workItem from="1748419178591" duration="521000" />
       <workItem from="1748516485085" duration="1385000" />
       <workItem from="1748538597490" duration="61000" />
-      <workItem from="1748548717423" duration="668000" />
+      <workItem from="1748548717423" duration="3495000" />
+      <workItem from="1748582462992" duration="1364000" />
+      <workItem from="1748608345635" duration="209000" />
+      <workItem from="1748611052861" duration="433000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
@@ -155,7 +159,223 @@
       <option name="project" value="LOCAL" />
       <updated>1748517476967</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748549498807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748549498807</updated>
+    </task>
+    <task id="LOCAL-00006" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748549753619</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748549753619</updated>
+    </task>
+    <task id="LOCAL-00007" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748549794584</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748549794584</updated>
+    </task>
+    <task id="LOCAL-00008" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748549817840</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748549817840</updated>
+    </task>
+    <task id="LOCAL-00009" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550017463</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550017463</updated>
+    </task>
+    <task id="LOCAL-00010" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550067332</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550067332</updated>
+    </task>
+    <task id="LOCAL-00011" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550188340</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550188340</updated>
+    </task>
+    <task id="LOCAL-00012" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550229570</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550229570</updated>
+    </task>
+    <task id="LOCAL-00013" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550283150</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550283150</updated>
+    </task>
+    <task id="LOCAL-00014" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550494841</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550494841</updated>
+    </task>
+    <task id="LOCAL-00015" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550554090</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550554090</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550630325</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550630325</updated>
+    </task>
+    <task id="LOCAL-00017" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550700554</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550700554</updated>
+    </task>
+    <task id="LOCAL-00018" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550714490</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550714490</updated>
+    </task>
+    <task id="LOCAL-00019" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550760731</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550760731</updated>
+    </task>
+    <task id="LOCAL-00020" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550817755</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550817755</updated>
+    </task>
+    <task id="LOCAL-00021" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550925014</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550925014</updated>
+    </task>
+    <task id="LOCAL-00022" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748550951661</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550951661</updated>
+    </task>
+    <task id="LOCAL-00023" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748551049417</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1748551049417</updated>
+    </task>
+    <task id="LOCAL-00024" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748551136702</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1748551136702</updated>
+    </task>
+    <task id="LOCAL-00025" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748551159067</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1748551159067</updated>
+    </task>
+    <task id="LOCAL-00026" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748551415919</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1748551415919</updated>
+    </task>
+    <task id="LOCAL-00027" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748551528440</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1748551528440</updated>
+    </task>
+    <task id="LOCAL-00028" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748551739918</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1748551739918</updated>
+    </task>
+    <task id="LOCAL-00029" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748551833383</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1748551833384</updated>
+    </task>
+    <task id="LOCAL-00030" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748552103928</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1748552103928</updated>
+    </task>
+    <task id="LOCAL-00031" summary="New Typologied in the StChopiner">
+      <option name="closed" value="true" />
+      <created>1748552164372</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1748552164372</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
