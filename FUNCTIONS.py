@@ -7,9 +7,9 @@ def midi_to_bytes(midi_obj):
     midi_bytes_io.seek(0)  # Reset pointer to start of buffer
     return midi_bytes_io
 
-def get_midi_bytes_from_roll(roll):
+def midi_to_streamlit(roll, label="Midi"):
     midi = roll.midi_human()
-    st.download_button("Download Midi file",
+    st.download_button(f"Download {label}",
                        data=midi_to_bytes(midi),
                        file_name="generated_music.mid",
                        mime="audio/midi"

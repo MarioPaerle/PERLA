@@ -6,7 +6,7 @@ class PercussionPattern:
         self.subdivisions = subdivisions
         self.velocities = [0 for _ in range(subdivisions*duration)]
         self.duration = duration
-        self.note = 72
+        self.note = 60
 
     def add_to(self, roll: Pianoroll):
         roll.add_rythmic_pattern_list(self.velocities, note=self.note)

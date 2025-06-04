@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Added Pattern Randomizing and 2 new progressions">
-      <change afterPath="$PROJECT_DIR$/PATTERNS.py" afterDir="false" />
+    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Trapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FUNCTIONS.py" beforeDir="false" afterPath="$PROJECT_DIR$/FUNCTIONS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intomido/drums.py" beforeDir="false" afterPath="$PROJECT_DIR$/intomido/drums.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       <workItem from="1748611052861" duration="2811000" />
       <workItem from="1748627829242" duration="2000" />
       <workItem from="1748801546597" duration="3000" />
-      <workItem from="1749025889389" duration="3051000" />
+      <workItem from="1749025889389" duration="5432000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
@@ -386,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748612184239</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Trapper">
+      <option name="closed" value="true" />
+      <created>1749030256406</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1749030256406</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,9 +406,10 @@
     <MESSAGE value="working on trapper" />
     <MESSAGE value="New Typologied in the StChopiner" />
     <MESSAGE value="Added Pattern Randomizing and 2 new progressions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Pattern Randomizing and 2 new progressions" />
+    <MESSAGE value="Trapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trapper" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PERLA$Trapper.coverage" NAME="Trapper Coverage Results" MODIFIED="1749028957970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PERLA$Trapper.coverage" NAME="Trapper Coverage Results" MODIFIED="1749033083878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

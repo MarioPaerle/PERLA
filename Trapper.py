@@ -2,9 +2,13 @@ from intomido.drums import PercussionPattern
 from intomido.composers import Pianoroll, Chords, Group
 import random as rd
 import numpy as np
+from FUNCTIONS import *
 import matplotlib.pyplot as plt
 from PATTERNS import TRAP_MASKING_16
+import streamlit as st
 
+# st.title("Perla Trap")
+# st.subheader("a simple app to generate midis for making trap beats in a matter of seconds")
 
 """A very simple Trapper: This program generates midis file for a very basic trap beat:
 Drums (hh, kick, snare), Melody (prog, pad), 808 [WIP]"""
@@ -32,7 +36,7 @@ if True:
         if rd.random() > 0.45:
             hh.add_roll(16*bar*2*mlt, rd.choice([1, 2])*rd.choice([4, 4, 4, 4, 5, 6, 6, 3, 3]), scaleup=rd.choice([True, False, True]), mod=2*mlt)
 
-    hh.humanize(1)
+    hh.humanize(0)
 
     hhroll.add_rythmic_pattern_list(hh.velocities)
     if PLOT:
@@ -64,16 +68,16 @@ if True:
 
     for i in range(4):
         snare.velocities[64 + i*128] = 100
-        if rd.random() > 0.33:
+        if rd.random() > 0.66:
             snare.velocities[112 + i*128] = 100
-        if rd.random() > 0.33:
+        if rd.random() > 0.66:
             if i < 3:
                 snare.velocities[128+16 + i*128] = 100
 
     snareroll.add_rythmic_pattern_list(snare.velocities)
     if PLOT:
         snareroll.plot()
-    snareroll.save_to('snare1.mid')
+    snareroll.save_to('snare.mid')
 
 
 # Progression

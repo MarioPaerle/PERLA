@@ -628,7 +628,7 @@ class Pianoroll:
             self._add_note(note)
             time = min(time+subdivision, clamp_end)
 
-    def add_rythmic_pattern_list(self, pattern_velocities_list: list, note=72):
+    def add_rythmic_pattern_list(self, pattern_velocities_list: list, note=60 ):
         self.grid[note, :] += np.array(pattern_velocities_list, dtype=np.uint8)
 
     def cast_to(self, scale, indicies=None):
