@@ -2,6 +2,7 @@ from intomido.composers import  *
 import random as rd
 import streamlit as st
 from intomido.functions import random_permute
+from FUNCTIONS import *
 
 RESOLUTION = 12
 
@@ -197,12 +198,7 @@ st.title("Chopiner 🎹")
 st.subheader('v0.1')
 st.write("Here's a simple Waltzer generator of just 8 bars 😒")
 
-from io import BytesIO
-def midi_to_bytes(midi_obj):
-    midi_bytes_io = BytesIO()
-    midi_obj.write(midi_bytes_io)
-    midi_bytes_io.seek(0)  # Reset pointer to start of buffer
-    return midi_bytes_io
+
 
 if st.button("generate"):
     waltzer, midi = chopiner()
