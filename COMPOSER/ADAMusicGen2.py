@@ -99,7 +99,6 @@ class DrumMIDI:
             self.add_event(tick, note, velocity, 'note_on')
             self.add_event(tick + duration_ticks, note, 0, 'note_off')
 
-
     def add_fixednote_pattern(self, pattern, start=0, subdivision=0.125, note='c4'):
         """
         Aggiunge un pattern ritmico:
@@ -160,7 +159,6 @@ class DrumMIDI:
             self.add_event(tick + duration_ticks, note_number, 0, 'note_off')
             current += roll_interval
 
-
     def add_decaying_roll(self, bar, type_str, number_of_notes, mode='before_beat', velocity=60):
         """
         Aggiunge un roll:
@@ -194,10 +192,10 @@ class DrumMIDI:
             note_number = 65 - i
             tick = int(current * self.beats_per_measure * self.resolution) // 4
             if mode == 'before_beat':
-                vel = int((velocity/number_of_notes) * i + 30)
+                vel = int((velocity / number_of_notes) * i + 30)
                 self.add_event(tick, note_number, max(0, min(vel, 127)), 'note_on')
             elif mode == 'after_beat':
-                vel = int(velocity - (velocity/number_of_notes) * i + 30)
+                vel = int(velocity - (velocity / number_of_notes) * i + 30)
                 self.add_event(tick, note_number, max(0, min(vel, 127)), 'note_on')
             self.add_event(tick + duration_ticks, note_number, 0, 'note_off')
             current += roll_interval
@@ -229,6 +227,5 @@ if __name__ == '__main__':
     drum.add_fixednote_pattern([127, 127, 0, 0, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 0, 127] * 1, subdivision=1 / 8)
     drum.add_fixednote_pattern([127, 0, 0, 127, 0, 0, 127, 0, 0, 127, 127, 0, 0, 127, 0, 80] * 1, subdivision=1 / 8)
     drum.add_fixednote_pattern([127, 0, 0, 127, 0, 0, 127, 0, 0, 127, 127, 0, 0, 127, 0, 80] * 1, subdivision=1 / 8)
-
 
     drum.generate_midi('drum_pattern.mid')

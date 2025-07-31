@@ -1,11 +1,14 @@
-
-
 import numpy as np
-from midigen import chord_to_notes, generate_midi_numeric, generate_midi, CHORD_FORMULAS
+from midigen_ import chord_to_notes, generate_midi_numeric, generate_midi, CHORD_FORMULAS
 from models import SCM
 import random
 import os
 from ADAMusicGen2 import *
+
+"""
+Questo file contiene il necessario per Generare i midi di una base trap con P3RLA.
+Essenzialmente è l'isieme dei file contenuti nella directory "Examples"
+"""
 
 NAME = 'songs/song01'
 os.makedirs(NAME, exist_ok=True)
@@ -28,7 +31,7 @@ class BeatMaker:
         datalist = [[c.strip() + f".{i}" for i, c in enumerate((line.split(', ') + [line.split(', ')[0]]))] for line in
                     datas]
         datas2 = np.array(datalist)
-        data = np.array(datas2)  # normalizzazione simile all'RBM originale
+        data = np.array(datas2)
 
         bm = SCM()
 
