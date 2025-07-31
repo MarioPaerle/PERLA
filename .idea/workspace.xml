@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Trapper" />
+    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Simplified Examples">
+      <change afterPath="$PROJECT_DIR$/COMPOSER/Examples/W0RD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/ADAMusicGen2.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/ADAMusicGen2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_BeatMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/P3RLA_BeatMaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_Kick2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_Melodies.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_Melodies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_hhs.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_hhs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_progressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_progressions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_snare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/PERLA_kick.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/PERLA_kick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/W0RD.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/drum_pattern.mid" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/drum_pattern.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/midigen.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/midigen_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMPOSER/syllaber.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,12 +62,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.ADAMusicGen2.executor": "Run",
+    "Python.P3RLA_Kick2.executor": "Run",
+    "Python.P3RLA_Melodies.executor": "Run",
+    "Python.P3RLA_hhs.executor": "Run",
+    "Python.P3RLA_progressions.executor": "Run",
+    "Python.PERLA_kick.executor": "Run",
     "Python.Trapper.executor": "Run",
+    "Python.W0RD.executor": "Run",
+    "Python.models.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mario/OneDrive/Documenti/GitHub/PERLA",
+    "last_opened_file_path": "C:/Users/mario/OneDrive/Documenti/GitHub/PERLA/COMPOSER/Examples",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,18 +86,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA\COMPOSER\Examples" />
       <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA\" />
       <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA\COMPOSER" />
       <recent name="C:\Users\Utente\PycharmProjects\PERLA" />
       <recent name="C:\Users\Utente\PycharmProjects\PERLA\intomido" />
-      <recent name="C:\Users\Utente\PycharmProjects\PERLA\PERLA4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA\COMPOSER\Examples" />
       <recent name="C:\Users\Utente\PycharmProjects\PERLA\intomido\_obsolete" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.StChopiner">
-    <configuration name="StChopiner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PERLA_kick">
+    <configuration name="P3RLA_Kick2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PERLA" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,12 +107,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COMPOSER/Examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StChopiner.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_Kick2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Trapper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="P3RLA_Melodies" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PERLA" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,12 +130,81 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COMPOSER/Examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trapper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_Melodies.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="P3RLA_hhs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PERLA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COMPOSER/Examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_hhs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="P3RLA_progressions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PERLA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COMPOSER/Examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_progressions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PERLA_kick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PERLA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COMPOSER/Examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COMPOSER/Examples/PERLA_kick.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,8 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.StChopiner" />
-        <item itemvalue="Python.Trapper" />
+        <item itemvalue="Python.PERLA_kick" />
+        <item itemvalue="Python.P3RLA_progressions" />
+        <item itemvalue="Python.P3RLA_Melodies" />
+        <item itemvalue="Python.P3RLA_hhs" />
+        <item itemvalue="Python.P3RLA_Kick2" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +253,7 @@
       <workItem from="1749025889389" duration="5432000" />
       <workItem from="1751648907043" duration="1001000" />
       <workItem from="1752005158572" duration="297000" />
-      <workItem from="1753990109556" duration="773000" />
+      <workItem from="1753990109556" duration="2325000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
@@ -430,7 +527,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753990854948</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Simplified Examples">
+      <option name="closed" value="true" />
+      <created>1753992443064</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1753992443064</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,9 +547,18 @@
     <MESSAGE value="New Typologied in the StChopiner" />
     <MESSAGE value="Added Pattern Randomizing and 2 new progressions" />
     <MESSAGE value="Trapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trapper" />
+    <MESSAGE value="Simplified Examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplified Examples" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PERLA$P3RLA_Kick2.coverage" NAME="P3RLA_Kick2 Coverage Results" MODIFIED="1753991939205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
+    <SUITE FILE_PATH="coverage/PERLA$P3RLA_Melodies.coverage" NAME="P3RLA_Melodies Coverage Results" MODIFIED="1753992190507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
+    <SUITE FILE_PATH="coverage/PERLA$P3RLA_hhs.coverage" NAME="P3RLA_hhs Coverage Results" MODIFIED="1753992039869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
+    <SUITE FILE_PATH="coverage/PERLA$PERLA_kick.coverage" NAME="PERLA_kick Coverage Results" MODIFIED="1753992375662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
     <SUITE FILE_PATH="coverage/PERLA$Trapper.coverage" NAME="Trapper Coverage Results" MODIFIED="1749033083878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PERLA$models.coverage" NAME="models Coverage Results" MODIFIED="1753991934991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER" />
+    <SUITE FILE_PATH="coverage/PERLA$W0RD.coverage" NAME="W0RD Coverage Results" MODIFIED="1753991662106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER" />
+    <SUITE FILE_PATH="coverage/PERLA$P3RLA_progressions.coverage" NAME="P3RLA_progressions Coverage Results" MODIFIED="1753992306223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
+    <SUITE FILE_PATH="coverage/PERLA$ADAMusicGen2.coverage" NAME="ADAMusicGen2 Coverage Results" MODIFIED="1753991217819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER" />
   </component>
 </project>

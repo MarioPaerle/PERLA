@@ -1,7 +1,7 @@
 import numpy as np
 from midigen_ import chord_to_notes, generate_midi_numeric, generate_midi, CHORD_FORMULAS
 from models import SCM
-import random
+from timeit import default_timer as timer
 import os
 from ADAMusicGen2 import *
 
@@ -40,15 +40,10 @@ class BeatMaker:
         v_init = '127.0'
         generated_sample = bm.sequential_predict(v_init, tmp, 15)
         generated_sample2 = bm.sequential_predict(v_init, tmp, 15)
-        # print(data.tolist().index([generated_sample + [generated_sample[0]]]))
-        # print(generated_sample)
-        # print(generated_sample2)
-        # print(generated_sample in data.tolist())
 
         drum = DrumMIDI()
         generated_sample = [g.split('.')[0] for i, g in enumerate(generated_sample)] + [g.split('.')[0] for i, g in
                                                                                         enumerate(generated_sample2)]
-        # print(generated_sample)
         self.kicks_pattern = generated_sample
         pattern = "[" + ", ".join(generated_sample) + "]"
         string = f"drum.add_fixednote_pattern({pattern},  subdivision=1 / 8)"
@@ -65,17 +60,14 @@ class BeatMaker:
         for d in datalist:
             datalist2.append(d + ['pass'] * (max_len - len(d)))
         datas2 = np.array(datalist2)
-        mlt = 1
-        data = np.array(datas2)  # normalizzazione simile all'RBM originale
+        data = np.array(datas2)
 
-        # Creiamo la BM completa
         bm = SCM()
 
         bm.fit(data, hashable=True)
 
         v_init = random.choice(data)[0]
         generated_sample = bm.sequential_predict(v_init, tmp, 8)
-        # print(data.tolist().index([generated_sample + [generated_sample[0]]]))
         print(generated_sample)
         print(generated_sample in data.tolist())
         drum = DrumMIDI()
@@ -90,9 +82,7 @@ class BeatMaker:
                     datas]
         datas2 = np.array(datalist)
         mlt = 1
-        data = np.array(datas2)  # normalizzazione simile all'RBM originale
-        # print(data)
-        # Creiamo la BM completa
+        data = np.array(datas2)
         bm = SCM()
 
         bm.fit(data, hashable=True)
@@ -121,13 +111,10 @@ class BeatMaker:
     def generate_progression(self, genmidi=False):
         with open(f'datas/{self.genre}_progressions1.txt', 'r') as f:
             datas = f.read().splitlines()
-
-        # datas2 = np.array([[str(chord_to_notes(c))[1:-1] for c in line.split()] for line in datas])
         datalist = [[c.strip() for c in (line.split('|') + [line.split('|')[0]])] for line in datas]
         datas2 = np.array(datalist)
         data = np.array(datas2)  # normalizzazione simile all'RBM originale
 
-        # Creiamo la BM completa
         bm = SCM()
 
         bm.fit(data, hashable=True)
@@ -160,7 +147,7 @@ class BeatMaker:
         datalist = [[c.strip() + f".{i}" for i, c in enumerate((line.split(' ') + [line.split(' ')[0]]))] for line in
                     datas]
         datas2 = np.array(datalist)
-        data = np.array(datas2)  # normalizzazione simile all'RBM originale
+        data = np.array(datas2)
 
         bm = SCM()
 
@@ -196,6 +183,7 @@ class BeatMaker:
 
 
 if __name__ == '__main__':
+    start = timer()
     NAME = 'songs/song01'
     bm = BeatMaker(NAME)
     bm.generate_drums(5)
@@ -203,3 +191,4 @@ if __name__ == '__main__':
     bm.generate_progression(genmidi=False)
     bm.generate_melody()
     bm.generate_simple_bass()
+    print(f"Training dei 5 modelli, generazione, compilazione e salvataggio hanno impiegato {timer() - start}s")

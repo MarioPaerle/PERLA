@@ -5,12 +5,9 @@ import random
 
 class DrumMIDI:
     def __init__(self, resolution=480, beats_per_measure=4):
-        # resolution: tick per battuta (quarter note)
-        # beats_per_measure: numero di battute per misura (es. 4 per il 4/4)
         self.resolution = resolution
         self.beats_per_measure = beats_per_measure
-        self.events = []  # Lista di eventi: (time_in_ticks, note, velocity, event_type)
-
+        self.events = []
     def add_event(self, time, note, velocity, event_type):
         """Aggiunge un evento alla timeline."""
         self.events.append((time, note, velocity, event_type))
@@ -28,7 +25,6 @@ class DrumMIDI:
             raise ValueError("Formato nota non valido. Usa ad es. 'c5' o 'f#4'.")
         name, octave = m.groups()
         octave = int(octave)
-        # Formula: (octave+1)*12 + semitono
         return (octave + 1) * 12 + note_map[name]
 
     def add_rhythm_pattern(self, start, end, subdivision, note, velocity=100,
@@ -134,11 +130,9 @@ class DrumMIDI:
             in modo che l'ultima nota arrivi esattamente al confine della misura.
           * after_beat: il roll inizia all'inizio della misura (bar-1).
         """
-        # Calcola il roll_interval in unità di misura (1 misura = 1)
         num, den = type_str.split('/')
         roll_interval = int(num) / int(den)
         if mode == 'before_beat':
-            # Target: l'inizio della misura "bar" (1-indexed)
             target_time = bar - 1
             start_time = target_time - number_of_notes * roll_interval
         elif mode == 'after_beat':
@@ -173,7 +167,6 @@ class DrumMIDI:
             in modo che l'ultima nota arrivi esattamente al confine della misura.
           * after_beat: il roll inizia all'inizio della misura (bar-1).
         """
-        # Calcola il roll_interval in unità di misura (1 misura = 1)
         num, den = type_str.split('/')
         roll_interval = int(num) / int(den)
         if mode == 'before_beat':
