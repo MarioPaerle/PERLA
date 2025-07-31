@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Trapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FUNCTIONS.py" beforeDir="false" afterPath="$PROJECT_DIR$/FUNCTIONS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intomido/drums.py" beforeDir="false" afterPath="$PROJECT_DIR$/intomido/drums.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +34,9 @@
     &quot;accountId&quot;: &quot;e87e4e04-530a-4fdb-8003-634d5ba2f9e9&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -49,6 +49,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.Trapper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -71,7 +72,30 @@
       <recent name="C:\Users\Utente\PycharmProjects\PERLA\intomido\_obsolete" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.StChopiner">
+    <configuration name="StChopiner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PERLA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StChopiner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Trapper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PERLA" />
       <option name="ENV_FILES" value="" />
@@ -97,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.StChopiner" />
         <item itemvalue="Python.Trapper" />
       </list>
     </recent_temporary>
@@ -104,8 +129,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.25659.43" />
-        <option value="bundled-python-sdk-181015f7ab06-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.25659.43" />
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -130,6 +154,9 @@
       <workItem from="1748627829242" duration="2000" />
       <workItem from="1748801546597" duration="3000" />
       <workItem from="1749025889389" duration="5432000" />
+      <workItem from="1751648907043" duration="1001000" />
+      <workItem from="1752005158572" duration="297000" />
+      <workItem from="1753990109556" duration="383000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
