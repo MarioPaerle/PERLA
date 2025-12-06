@@ -1,7 +1,5 @@
 # 🎹 PERLA - Algorithmic Music Generation
 
-**P**rogrammatic **E**legant **R**hythmic **L**yrical **A**rchitect
-
 PERLA is a collection of music generation algorithms that create original compositions without complex AI models. Born from a passion for automating music composition, PERLA demonstrates that elegant, music-theory-informed algorithms can produce compelling musical results.
 
 ## Featured: StChopiner Generator
