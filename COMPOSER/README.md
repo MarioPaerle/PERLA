@@ -19,7 +19,9 @@ streamlit run StChopiner.py
 ```
 
 ## An Example taked from the StChopiner
-[ChopinerExample.mp3](..%2FChopinerExample.mp3)
+<audio controls>
+ <source src="https://github.com/MarioPaerle/PERLA/raw/master/ChopinerExample.mp3" type="audio/mpeg">
+</audio>
 
 The app will open in your browser at `http://localhost:8501`
 

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Readme and minor changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roll.mid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,36 +41,39 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2xdJQZ5MB7RPOkYBWbpyEoB7wT3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.ADAMusicGen2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P3RLA_BeatMaker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P3RLA_Kick2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P3RLA_Melodies.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P3RLA_hhs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.P3RLA_progressions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PERLA_kick.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Trapper.executor&quot;: &quot;Run&quot;,
-    &quot;Python.W0RD.executor&quot;: &quot;Run&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mario/OneDrive/Documenti/GitHub/PERLA/COMPOSER/Examples&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.ADAMusicGen2.executor": "Run",
+    "Python.P3RLA_BeatMaker.executor": "Run",
+    "Python.P3RLA_Kick2.executor": "Run",
+    "Python.P3RLA_Melodies.executor": "Run",
+    "Python.P3RLA_hhs.executor": "Run",
+    "Python.P3RLA_progressions.executor": "Run",
+    "Python.PERLA_kick.executor": "Run",
+    "Python.Trapper.executor": "Run",
+    "Python.W0RD.executor": "Run",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/mario/OneDrive/Documenti/GitHub/PERLA/COMPOSER/Examples",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA\COMPOSER\Examples" />
@@ -80,6 +83,7 @@
       <recent name="C:\Users\Utente\PycharmProjects\PERLA\intomido" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA" />
       <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA\COMPOSER\Examples" />
       <recent name="C:\Users\Utente\PycharmProjects\PERLA\intomido\_obsolete" />
     </key>
@@ -241,7 +245,7 @@
       <workItem from="1751648907043" duration="1001000" />
       <workItem from="1752005158572" duration="297000" />
       <workItem from="1753990109556" duration="3335000" />
-      <workItem from="1765049459049" duration="331000" />
+      <workItem from="1765049459049" duration="656000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
@@ -531,13 +535,22 @@
       <option name="project" value="LOCAL" />
       <updated>1753993332947</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Readme and minor changes">
+      <option name="closed" value="true" />
+      <created>1765050004486</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1765050004486</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Cloned" />
     <MESSAGE value="working on trapper" />
     <MESSAGE value="New Typologied in the StChopiner" />
