@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Simplified Examples">
-      <change afterPath="$PROJECT_DIR$/COMPOSER/Examples/W0RD.py" afterDir="false" />
+    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Readme and minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/ADAMusicGen2.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/ADAMusicGen2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_BeatMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/P3RLA_BeatMaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_Kick2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_Melodies.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_Melodies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_hhs.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_hhs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_progressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_progressions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/P3RLA_snare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/PERLA_kick.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/Examples/PERLA_kick.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/W0RD.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/drum_pattern.mid" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/drum_pattern.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/midigen.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/midigen_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMPOSER/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMPOSER/syllaber.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,30 +46,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.ADAMusicGen2.executor": "Run",
-    "Python.P3RLA_Kick2.executor": "Run",
-    "Python.P3RLA_Melodies.executor": "Run",
-    "Python.P3RLA_hhs.executor": "Run",
-    "Python.P3RLA_progressions.executor": "Run",
-    "Python.PERLA_kick.executor": "Run",
-    "Python.Trapper.executor": "Run",
-    "Python.W0RD.executor": "Run",
-    "Python.models.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mario/OneDrive/Documenti/GitHub/PERLA/COMPOSER/Examples",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.ADAMusicGen2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P3RLA_BeatMaker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P3RLA_Kick2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P3RLA_Melodies.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P3RLA_hhs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P3RLA_progressions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PERLA_kick.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Trapper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.W0RD.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mario/OneDrive/Documenti/GitHub/PERLA/COMPOSER/Examples&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mario\OneDrive\Documenti\GitHub\PERLA\COMPOSER\Examples" />
@@ -97,8 +84,8 @@
       <recent name="C:\Users\Utente\PycharmProjects\PERLA\intomido\_obsolete" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PERLA_kick">
-    <configuration name="P3RLA_Kick2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.P3RLA_BeatMaker">
+    <configuration name="P3RLA_BeatMaker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PERLA" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,12 +94,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COMPOSER/Examples" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COMPOSER" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COMPOSER/Examples/P3RLA_Kick2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COMPOSER/P3RLA_BeatMaker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.P3RLA_BeatMaker" />
         <item itemvalue="Python.PERLA_kick" />
         <item itemvalue="Python.P3RLA_progressions" />
         <item itemvalue="Python.P3RLA_Melodies" />
         <item itemvalue="Python.P3RLA_hhs" />
-        <item itemvalue="Python.P3RLA_Kick2" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +240,8 @@
       <workItem from="1749025889389" duration="5432000" />
       <workItem from="1751648907043" duration="1001000" />
       <workItem from="1752005158572" duration="297000" />
-      <workItem from="1753990109556" duration="2325000" />
+      <workItem from="1753990109556" duration="3335000" />
+      <workItem from="1765049459049" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
@@ -535,7 +523,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753992443064</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Readme and minor changes">
+      <option name="closed" value="true" />
+      <created>1753993332947</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1753993332947</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,13 +544,15 @@
     <MESSAGE value="Added Pattern Randomizing and 2 new progressions" />
     <MESSAGE value="Trapper" />
     <MESSAGE value="Simplified Examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplified Examples" />
+    <MESSAGE value="Readme and minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme and minor changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PERLA$P3RLA_Kick2.coverage" NAME="P3RLA_Kick2 Coverage Results" MODIFIED="1753991939205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
     <SUITE FILE_PATH="coverage/PERLA$P3RLA_Melodies.coverage" NAME="P3RLA_Melodies Coverage Results" MODIFIED="1753992190507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
     <SUITE FILE_PATH="coverage/PERLA$P3RLA_hhs.coverage" NAME="P3RLA_hhs Coverage Results" MODIFIED="1753992039869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
     <SUITE FILE_PATH="coverage/PERLA$PERLA_kick.coverage" NAME="PERLA_kick Coverage Results" MODIFIED="1753992375662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER/Examples" />
+    <SUITE FILE_PATH="coverage/PERLA$P3RLA_BeatMaker.coverage" NAME="P3RLA_BeatMaker Coverage Results" MODIFIED="1753993270480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER" />
     <SUITE FILE_PATH="coverage/PERLA$Trapper.coverage" NAME="Trapper Coverage Results" MODIFIED="1749033083878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PERLA$models.coverage" NAME="models Coverage Results" MODIFIED="1753991934991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER" />
     <SUITE FILE_PATH="coverage/PERLA$W0RD.coverage" NAME="W0RD Coverage Results" MODIFIED="1753991662106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COMPOSER" />

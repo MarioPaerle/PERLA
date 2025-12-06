@@ -1,19 +1,114 @@
-# COMPOSER
-Per ora il progetto è molto work in progress, più che altro
-per sistemare ogni bug e rendere tutto più leggibile,
-ma per ora:
+# 🎹 PERLA - Algorithmic Music Generation
 
-## Files:
-- ADAMusicGen2.py: contiene quello che è il cuore della trascrizione
-da stringhe a midi e program synthesis, usando funzione importate da
-- midigen_.py: che contiene le funzioni di base per trascrizione midi, e per arrangiare le progressioni
-- models.py: contiene SCM() e DeepSCM() che sono i due modelli, entrambi costruiscono una matrice di correlazione
-solo che il secondo può dare più o meno peso ad altre relazioni in base alla distanza: DeepSCM(1) equivale ad una SCM()
-- P3RLA_BeatMaker.py: Raggruppa tutto ciò che il framework può fare generando nella cartella songs, una cartella contente 
-tutti i file midi, pronti per sintetizzare un pezzo trap. Invito ad eseguire questo file
-- 
-## Directories:
-- datas contiene ogni file con cui vengono addestrati i singoli modelli
-- Examples contiene qualche esempio di utilizzo del framework, ogni file se eseguito traina un modello e fa inferenza su 
-dei dati. 
-- songs contiene le cartelle delle canzoni generate da P3RLA_BeatMaker.py
+**P**rogrammatic **E**legant **R**hythmic **L**yrical **A**rchitect
+
+PERLA is a collection of music generation algorithms that create original compositions without complex AI models. Born from a passion for automating music composition, PERLA demonstrates that elegant, music-theory-informed algorithms can produce compelling musical results.
+
+## Featured: StChopiner Generator
+
+**StChopiner** is PERLA's flagship music generator, featuring an interactive Streamlit interface for real-time music composition. Create Chopin-inspired piano pieces with customizable parameters and instant playback.
+
+### 🚀 Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch the Chopiner web interface
+streamlit run StChopiner.py
+```
+
+## An Example taked from the StChopiner
+[ChopinerExample.mp3](..%2FChopinerExample.mp3)
+
+The app will open in your browser at `http://localhost:8501`
+
+### Features
+
+- **Interactive Web Interface**: Real-time parameter adjustment with immediate audio feedback
+- **Chopin-Inspired Compositions**: Generate piano pieces influenced by Romantic-era compositional techniques
+- **Customizable Parameters**: Control tempo, key, complexity, and musical structure
+- **MIDI Export**: Download your generated compositions as MIDI files
+- **Music Theory-Based**: Uses established compositional patterns and harmonic progressions
+
+### How It Works
+
+StChopiner employs music-informed algorithms that:
+
+1. **Pattern Selection**: Chooses from predefined melodic and harmonic patterns inspired by classical composition
+2. **Harmonic Progression**: Applies music theory rules to create coherent chord progressions
+3. **Melodic Development**: Generates melodies that follow contour principles and scale constraints
+4. **Rhythmic Structure**: Implements varied rhythmic patterns for musical interest
+5. **MIDI Synthesis**: Converts the algorithmic output into playable MIDI format
+
+## Project Structure
+
+```
+PERLA/
+├── StChopiner.py       # Main Streamlit application for the Chopiner generator
+├── FUNCTIONS.py        # Core music generation functions
+├── PATTERNS.py         # Predefined musical patterns and templates
+├── StringToMidi.py     # Converts pattern strings to MIDI format
+├── Trapper.py          # Alternative music generation algorithm
+├── COMPOSER/           # Additional composition modules
+├── intomido/          # MIDI utility functions
+└── requirements.txt    # Python dependencies
+```
+
+## 🎹 Other Generators
+
+### Trapper
+A different algorithmic approach to music generation, offering alternative compositional styles and techniques.
+
+### COMPOSER Suite
+Additional experimental music generation algorithms in the COMPOSER directory.
+
+## 🛠Requirements
+
+- Python 3.7+
+- Streamlit
+- mido (MIDI library)
+- Additional dependencies listed in `requirements.txt`
+
+## Usage Examples
+
+### Basic StChopiner Usage
+
+```bash
+streamlit run StChopiner.py
+```
+
+Then use the web interface to:
+1. Select your desired musical key
+2. Adjust tempo and complexity
+3. Click "Generate" to create your composition
+4. Play back the result directly in the browser
+5. Download as MIDI file for further editing
+
+### Programmatic Usage
+
+```python
+from FUNCTIONS import generate_composition
+from StringToMidi import convert_to_midi
+
+# Generate a composition
+composition = generate_composition(
+    key='C',
+    tempo=120,
+    complexity=0.7
+)
+
+# Convert to MIDI
+midi_file = convert_to_midi(composition)
+midi_file.save('my_composition.mid')
+```
+
+
+## License
+
+This project is open source. Please check the repository for license details.
+
+## Background
+
+PERLA started as a personal exploration into algorithmic music composition. The goal was to understand if music could be generated through rule-based systems that encode musical knowledge, rather than learning from datasets. The StChopiner generator represents the culmination of this exploration, demonstrating that algorithmic approaches can produce musically coherent and aesthetically pleasing results.
+
