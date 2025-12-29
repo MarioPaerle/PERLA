@@ -84,30 +84,7 @@ Then use the web interface to:
 3. Click "Generate" to create your composition
 4. Play back the result directly in the browser
 5. Download as MIDI file for further editing
-
-### Programmatic Usage
-
-```python
-from FUNCTIONS import generate_composition
-from StringToMidi import convert_to_midi
-
-# Generate a composition
-composition = generate_composition(
-    key='C',
-    tempo=120,
-    complexity=0.7
-)
-
-# Convert to MIDI
-midi_file = convert_to_midi(composition)
-midi_file.save('my_composition.mid')
-```
-
-
-## License
-
-This project is open source. Please check the repository for license details.
-
+6. 
 ## Background
 
 PERLA started as a personal exploration into algorithmic music composition. The goal was to understand if music could be generated through rule-based systems that encode musical knowledge, rather than learning from datasets. The StChopiner generator represents the culmination of this exploration, demonstrating that algorithmic approaches can produce musically coherent and aesthetically pleasing results.

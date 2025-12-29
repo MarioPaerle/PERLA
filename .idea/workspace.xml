@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Readme and minor changes" />
+    <list default="true" id="d47e7fc9-d4b5-4b47-8e21-da4d2dc04b19" name="Changes" comment="Readme and minor changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +245,7 @@
       <workItem from="1751648907043" duration="1001000" />
       <workItem from="1752005158572" duration="297000" />
       <workItem from="1753990109556" duration="3335000" />
-      <workItem from="1765049459049" duration="1027000" />
+      <workItem from="1765049459049" duration="1467000" />
     </task>
     <task id="LOCAL-00001" summary="Cloned">
       <option name="closed" value="true" />
@@ -557,7 +559,39 @@
       <option name="project" value="LOCAL" />
       <updated>1765050465067</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Readme and minor changes">
+      <option name="closed" value="true" />
+      <created>1765050529839</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1765050529839</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Readme and minor changes">
+      <option name="closed" value="true" />
+      <created>1765050630920</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1765050630920</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Readme and minor changes">
+      <option name="closed" value="true" />
+      <created>1765050668987</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1765050668987</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Readme and minor changes">
+      <option name="closed" value="true" />
+      <created>1765050858304</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1765050858304</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
